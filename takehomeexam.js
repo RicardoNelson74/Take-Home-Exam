@@ -14,7 +14,7 @@ if( code == 'r' || code == 'R')
     
     if(hoursworked < 160)
     {
-    	gorsssalary = fixedsalary / 160 * hoursworked
+    	grosssalary = fixedsalary / 160 * hoursworked
     }
     
     else if( hoursworked > 160)
@@ -70,9 +70,6 @@ else if (grosssalary <= 499.99)
         
         	netsalary= grosssalary - deductions
         }
-
-
-
 //Employee Pay Slip 
 alert(`Employee Name:${firstname + lastname} \n Employee Number:${employeenumber} \n Employee Type:${code}
 \n Employee Gross Salary:${grosssalary} \n Employee Deductions :${deductions} \n Employee Net Salary :${netsalary} \n `)
