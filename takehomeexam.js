@@ -7,8 +7,6 @@ firstname = prompt('Please enter employee first name')
 lastname = prompt('Please enter employee last name')
 code = prompt('Please enter employee code.\n r-Regular worker \n l-Lecturer')
 
-
-//regular workers
 if( code == 'r' || code == 'R')
 {
 	hoursworked = parseFloat(prompt('Please enter hours worked'))
@@ -34,26 +32,28 @@ if( code == 'r' || code == 'R')
 }
 
         
-//lecturers    
+    
 if(code == 'l' || code == 'L')
 {
-	hoursworked = parseFloat(prompt('Please enter hours worked'))
+	
     lecturercode= prompt('Please enter lecturer qualification code. \n b- Bachelors Degree \n m- Masters')
+    hoursworked = parseFloat(prompt('Please enter hours worked'))
     
     if( lecturercode == 'b' || lecturercode == 'B')
     {
-    	gorsssalary= hoursworked * 325 + 1250
+    	grosssalary= hoursworked * 325 + 1250
     }
     
     else if ( lecturercode == 'm' || lecturercode == 'M')
     {
-    	gorsssalary= hoursworked * 575 + 2500
+    	grosssalary= hoursworked * 575 + 2500
     }
+    
+    
     
 }
 
-if (code != 'r' || code != 'l')
-{ alert('code invalid please enter r for regular worker or l for lecturer, Thank You.')}
+
 
 tax= grosssalary - 5000 * 25/100
 
